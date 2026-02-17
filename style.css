@@ -1,0 +1,60 @@
+:root {
+    --bs-success: hsl(100, 100%, 50%);
+    --bs-success-hover: hsl(100, 100%, 40%);
+
+    --bs-fs-1: 3rem;
+}
+
+.text-success {
+    color: var(--bs-success) !important;
+}
+
+.text-danger.bg-info {
+    background-color: var(--bs-success) !important;
+};
+.text-info bg-success {
+    background-color: var(--bs-success) !important;
+};
+
+.bg-success {
+    background-color: var(--bs-success) !important;
+}
+.btn-success {
+    background-color: var(--bs-success) !important;
+}
+.btn-success:hover {
+    background-color: var(--bs-success-) !important;
+    filter: brightness(90%);
+}
+
+.btn-outline-success {
+    border: 1px solid var(--bs-success) !important;
+    color: var(--bs-success) !important;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--bs-success) !important;
+    color: #fff !important;
+}
+
+.fs-1 {
+    font-size: calc(var(--bs-fs-1) + 1rem) !important;
+}
+
+.box {
+    width: 10rem;
+    height: 10rem;
+}
+
+.carousel .carousel-indicators li {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.carousel .carousel-indicators .active {
+    border: 2px solid #fff;
+    position: relative;
+    top: 9px;
+}
