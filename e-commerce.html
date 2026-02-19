@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive - E-Commerce</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./e-commerce.css">
+</head>
+<body>
+    
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#" class="text-white ms-2 fw-bold">ShopNow</a></span>
+                <div class="dropdown">
+                    <button class="btn btn-link text-white dropdown-toggle text-decoration-none" type="button" data-bs-toggle="dropdown">
+                        English
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Spanish</a></li>
+                        <li><a class="dropdown-item" href="#">French</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">Exclusive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <div class="search-box d-none d-lg-block">
+                    <input type="text" class="form-control" placeholder="What are you looking for?">
+                    <i class="bi bi-search"></i>
+                </div>
+                <a href="#" class="text-dark"><i class="bi bi-heart fs-5"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-cart3 fs-5"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar and Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar Categories -->
+                <div class="col-lg-3 col-md-4 d-none d-md-block">
+                    <div class="category-sidebar">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Woman's Fashion <i class="bi bi-chevron-right float-end"></i></a></li>
+                            <li><a href="#">Men's Fashion <i class="bi bi-chevron-right float-end"></i></a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home & Lifestyle</a></li>
+                            <li><a href="#">Medicine</a></li>
+                            <li><a href="#">Sports & Outdoor</a></li>
+                            <li><a href="#">Baby's & Toys</a></li>
+                            <li><a href="#">Groceries & Pets</a></li>
+                            <li><a href="#">Health & Beauty</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hero Carousel -->
+                <div class="col-lg-9 col-md-8">
+                    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="hero-slide">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6">
+                                            <div class="hero-content">
+                                                <div class="d-flex align-items-center mb-3">
+                                                    <i class="bi bi-apple fs-1 me-2"></i>
+                                                    <span>iPhone 14 Series</span>
+                                                </div>
+                                                <h1 class="display-4 fw-bold mb-4">Up to 10%<br>off Voucher</h1>
+                                                <a href="#" class="shop-now-btn">Shop Now <i class="bi bi-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?w=600&h=400&fit=crop" alt="iPhone 14" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="hero-slide">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6">
+                                            <div class="hero-content">
+                                                <h1 class="display-4 fw-bold mb-4">Summer Collection</h1>
+                                                <a href="#" class="shop-now-btn">Shop Now <i class="bi bi-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=400&fit=crop" alt="Products" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Sales Section -->
+    <section class="flash-sales py-5">
+        <div class="container">
+            <div class="section-header mb-4">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="section-tag"></div>
+                    <span class="text-danger fw-bold ms-2">Today's</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="d-flex align-items-center gap-4">
+                        <h2 class="mb-0 fw-bold">Flash Sales</h2>
+                        <div class="countdown d-flex gap-3">
+                            <div class="time-unit">
+                                <div class="time-label">Days</div>
+                                <div class="time-value">03</div>
+                            </div>
+                            <span class="time-separator">:</span>
+                            <div class="time-unit">
+                                <div class="time-label">Hours</div>
+                                <div class="time-value">23</div>
+                            </div>
+                            <span class="time-separator">:</span>
+                            <div class="time-unit">
+                                <div class="time-label">Minutes</div>
+                                <div class="time-value">19</div>
+                            </div>
+                            <span class="time-separator">:</span>
+                            <div class="time-unit">
+                                <div class="time-label">Seconds</div>
+                                <div class="time-value">56</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="btn-carousel" onclick="previousSlide('flashSalesCarousel')">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+                        <button class="btn-carousel" onclick="nextSlide('flashSalesCarousel')">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div id="flashSalesCarousel" class="product-carousel">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card">
+                            <div class="badge-discount">-40%</div>
+                            <div class="product-actions">
+                                <button class="btn-action"><i class="bi bi-heart"></i></button>
+                                <button class="btn-action"><i class="bi bi-eye"></i></button>
+                            </div>
+                            <div class="product-image">
+                                <img src="./images/HAVIT HV-G92 Gamepad.jpg" alt="Gamepad">
+                            </div>
+                            <div class="product-info">
+                                <h5>HAVIT HV-G92 Gamepad</h5>
+                                <div class="price">
+                                    <span class="current-price">$120</span>
+                                    <span class="old-price">$160</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span>(88)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card">
+                            <div class="badge-discount">-35%</div>
+                            <div class="product-actions">
+                                <button class="btn-action"><i class="bi bi-heart"></i></button>
+                                <button class="btn-action"><i class="bi bi-eye"></i></button>
+                            </div>
+                            <div class="product-image">
+                                <img src="./images/AK-900 Wired Keyboard.jpg" alt="Keyboard">
+                                <button class="btn-add-cart">Add To Cart</button>
+                            </div>
+                            <div class="product-info">
+                                <h5>AK-900 Wired Keyboard</h5>
+                                <div class="price">
+                                    <span class="current-price">$960</span>
+                                    <span class="old-price">$1160</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <span>(75)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card">
+                            <div class="badge-discount">-30%</div>
+                            <div class="product-actions">
+                                <button class="btn-action"><i class="bi bi-heart"></i></button>
+                                <button class="btn-action"><i class="bi bi-eye"></i></button>
+                            </div>
+                            <div class="product-image">
+                                <img src="./images/IPS LCD Gaming Monitor.jpg" alt="Monitor">
+                            </div>
+                            <div class="product-info">
+                                <h5>IPS LCD Gaming Monitor</h5>
+                                <div class="price">
+                                    <span class="current-price">$370</span>
+                                    <span class="old-price">$400</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span>(99)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card">
+                            <div class="badge-discount">-25%</div>
+                            <div class="product-actions">
+                                <button class="btn-action"><i class="bi bi-heart"></i></button>
+                                <button class="btn-action"><i class="bi bi-eye"></i></button>
+                            </div>
+                            <div class="product-image">
+                                <img src="./images/S-Series Comfort Chair.webp" alt="Chair">
+                            </div>
+                            <div class="product-info">
+                                <h5>S-Series Comfort Chair</h5>
+                                <div class="price">
+                                    <span class="current-price">$375</span>
+                                    <span class="old-price">$400</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span>(99)</span>
+
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card">
+                            <div class="badge-discount">-25%</div>
+                            <div class="product-actions">
+                                <button class="btn-action"><i class="bi bi-heart"></i></button>
+                                <button class="btn-action"><i class="bi bi-eye"></i></button>
+                            </div>
+                            <div class="product-image">
+                                <img src="./images/S-Series Comfort Chair.webp" alt="Chair">
+                            </div>
+                            <div class="product-info">
+                                <h5>S-Series Comfort Chair</h5>
+                                <div class="price">
+                                    <span class="current-price">$375</span>
+                                    <span class="old-price">$400</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span>(99)</span>
+
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card">
+                            <div class="badge-discount">-25%</div>
+                            <div class="product-actions">
+                                <button class="btn-action"><i class="bi bi-heart"></i></button>
+                                <button class="btn-action"><i class="bi bi-eye"></i></button>
+                            </div>
+                            <div class="product-image">
+                                <img src="./images/S-Series Comfort Chair.webp" alt="Chair">
+                            </div>
+                            <div class="product-info">
+                                <h5>S-Series Comfort Chair</h5>
+                                <div class="price">
+                                    <span class="current-price">$375</span>
+                                    <span class="old-price">$400</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span>(99)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <button class="btn btn-danger btn-lg px-5">View All Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse By Category -->
+    <section class="categories py-5">
+        <div class="container">
+            <div class="section-header mb-4">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="section-tag"></div>
+                    <span class="text-danger fw-bold ms-2">Categories</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0 fw-bold">Browse By Category</h2>
+                    <div class="carousel-controls">
+                        <button class="btn-carousel">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+                        <button class="btn-carousel">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="category-card">
+                        <i class="bi bi-phone"></i>
+                        <h6>Phones</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="category-card">
+                        <i class="bi bi-pc-display"></i>
+                        <h6>Computers</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="category-card">
+                        <i class="bi bi-smartwatch"></i>
+                        <h6>SmartWatch</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="category-card active">
+                        <i class="bi bi-camera"></i>
+                        <h6>Camera</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="category-card">
+                        <i class="bi bi-headphones"></i>
+                        <h6>HeadPhones</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="category-card">
+                        <i class="bi bi-controller"></i>
+                        <h6>Gaming</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Selling Products -->
+    <section class="best-selling py-5">
+        <div class="container">
+            <div class="section-header mb-4">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="section-tag"></div>
+                    <span class="text-danger fw-bold ms-2">This Month</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0 fw-bold">Best Selling Products</h2>
+                    <button class="btn btn-danger px-4">View All</button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-actions">
+                            <button class="btn-action"><i class="bi bi-heart"></i></button>
+                            <button class="btn-action"><i class="bi bi-eye"></i></button>
+                        </div>
+                        <div class="product-image">
+                            <img src="./images/The north coat.jpg" alt="Coat">
+                        </div>
+                        <div class="product-info">
+                            <h5>The north coat</h5>
+                            <div class="price">
+                                <span class="current-price">$260</span>
+                                <span class="old-price">$360</span>
+                            </div>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span>(65)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-actions">
+                            <button class="btn-action"><i class="bi bi-heart"></i></button>
+                            <button class="btn-action"><i class="bi bi-eye"></i></button>
+                        </div>
+                        <div class="product-image">
+                            <img src="./images/Gucci duffle bag.jpg" alt="Bag">
+                        </div>
+                        <div class="product-info">
+                            <h5>Gucci duffle bag</h5>
+                            <div class="price">
+                                <span class="current-price">$960</span>
+                                <span class="old-price">$1160</span>
+                            </div>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <span>(65)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-actions">
+                            <button class="btn-action"><i class="bi bi-heart"></i></button>
+                            <button class="btn-action"><i class="bi bi-eye"></i></button>
+                        </div>
+                        <div class="product-image">
+                            <img src="./images/RGB liquid CPU Cooler.webp" alt="Cooler">
+                        </div>
+                        <div class="product-info">
+                            <h5>RGB liquid CPU Cooler</h5>
+                            <div class="price">
+                                <span class="current-price">$160</span>
+                                <span class="old-price">$170</span>
+                            </div>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <span>(65)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-actions">
+                            <button class="btn-action"><i class="bi bi-heart"></i></button>
+                            <button class="btn-action"><i class="bi bi-eye"></i></button>
+                        </div>
+                        <div class="product-image">
+                            <img src="./images/Small BookSelf.jpg" alt="Bookshelf">
+                        </div>
+                        <div class="product-info">
+                            <h5>Small BookSelf</h5>
+                            <div class="price">
+                                <span class="current-price">$360</span>
+                            </div>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span>(65)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Music Experience Banner -->
+    <section class="music-banner py-5">
+        <div class="container">
+            <div class="music-banner-content">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="banner-text">
+                            <span class="banner-label">Categories</span>
+                            <h2 class="display-4 fw-bold mb-4">Enhance Your<br>Music Experience</h2>
+                            <div class="countdown-circles d-flex gap-3 mb-4">
+                                <div class="circle-time">
+                                    <div class="time-value">23</div>
+                                    <div class="time-label">Hours</div>
+                                </div>
+                                <div class="circle-time">
+                                    <div class="time-value">05</div>
+                                    <div class="time-label">Days</div>
+                                </div>
+                                <div class="circle-time">
+                                    <div class="time-value">59</div>
+                                    <div class="time-label">Minutes</div>
+                                </div>
+                                <div class="circle-time">
+                                    <div class="time-value">35</div>
+                                    <div class="time-label">Seconds</div>
+                                </div>
+                            </div>
+                            <button class="btn btn-success btn-lg px-5">Buy Now!</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&h=400&fit=crop" alt="JBL Speaker" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="./e-commerce.js"></script>
+</body>
+</html>
