@@ -1,0 +1,132 @@
+.top-banner {
+    background-color: hsl(211, 53%, 11%);
+    font-size: 14px;
+}
+
+.account-sidebar a {
+    text-decoration: none;
+    display: block;
+    padding: 6px 0;
+    color: hsl(0, 0%, 33%);
+}
+
+.account-sidebar a:hover {
+    color: hsl(354, 70%, 54%);
+}
+
+.active-link {
+    color: hsl(354, 70%, 54%) !important;
+    font-weight: 600;
+}
+.top-black {
+    background-color: hsl(0, 0%, 0%);
+    font-size: 14px;
+}
+.contact-box {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+}
+
+.contact-form {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+}
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: hsl(0, 68%, 56%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.btn-danger {
+    background-color: hsl(0, 68%, 56%);
+    border: none;
+}
+.search-box{
+    width: 250px;
+    position: relative;
+}
+.search-box input {
+    width: 100%;
+    padding: 12px 45px 12px 15px;
+    border-radius: 50px;
+    border: 1px solid hsl(0, 2%, 69%);
+    color: hsl(0, 9%, 25%);
+    background: transparent;
+}
+
+.search-box i{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: hsl(0, 9%, 25%);
+    cursor: pointer;
+}
+.footer {
+    background-color: hsl(211, 53%, 11%);
+}
+
+.footer-link {
+    color: hsl(0, 0%, 80%);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    transition: 0.3s;
+
+}
+
+.footer-link:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+.card {
+    border-radius: 8px;
+}
+
+.btn-danger {
+    background-color: hsl(0, 68%, 56%);
+    border: none;
+}
+.email-box{
+   width: 180px;
+    position: relative;
+}
+
+.email-box input {
+    width: 100%;
+    padding: 12px 45px 12px 15px;
+    border-radius: 4px;
+    border: 1px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    background: transparent;
+}
+.email-box i{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.email-box input::placeholder{
+    color: hsl(0, 1%, 21%);
+}
+.qr-img{
+    width: 90px;
+}
+.store-btn{
+    width: 95px;
+    cursor: pointer;
+}
+.social-icons a{
+    color: hsl(0, 0%, 80%);
+    font-size: 20px;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    color: hsl(0, 0%, 100%);
+}
