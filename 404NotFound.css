@@ -1,0 +1,25 @@
+main {
+    text-align: center;
+    padding: 50px 20px ;
+}
+
+h1{
+    font-size: 120px;
+}
+
+.btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+}
